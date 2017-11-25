@@ -14,16 +14,16 @@ class Pessoa(object):
     def retorna_Celular(self):
         return self._celular
    
-    def alterar_Nome(self, Nome):
-        self._nome = Nome
+    def alterar_Nome(self, nome):
+        self._nome = nome
         return True
     
-    def alterar_Celular(self, Celular):
-        self._celular = Celular
+    def alterar_Celular(self, celular):
+        self._celular = celular
         return True
     
-    def alterar_Email(self, Email):
-        self._email = Email
+    def alterar_Email(self, email):
+        self._email = email
         return True
 
 

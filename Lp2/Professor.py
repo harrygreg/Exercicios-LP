@@ -4,28 +4,27 @@ from Pessoa import Pessoa
 class Professor(object):
     
     def __init__(self):
-    
         self._apelido = None
         self._disciplina = None
 
     def getApelido(self):
         return self._apelido
     
-    def setApelido(self, Apelido):
-        self._apelido = Apelido
+    def setApelido(self, apelido):
+        self._apelido = apelido
        
-    def adiciona_disciplina(self, lista, lista2, Nome, Carga,):
-        if Nome in lista:
+    def adiciona_disciplina(self, lista, lista2, nome, carga,):
+        if nome in lista:
             return False 
         else:
-            lista.append(Nome)
-            lista2.append(Carga)
+            lista.append(nome)
+            lista2.append(carga)
             return True
         
-    def deleta_disciplina(self, lista, lista2, Nome):
+    def deleta_disciplina(self, lista, lista2, nome):
         
-        if Nome in lista:
-            x=lista.index(Nome)
+        if nome in lista:
+            x = lista.index(nome)
             lista.pop(x)
             lista.pop(x+1)
             return True

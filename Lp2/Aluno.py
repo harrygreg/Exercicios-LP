@@ -6,29 +6,29 @@ class Aluno(object):
         self._sigla_curso = None
         self._matriculas = None
         
-    def disciplinas_alunos(self, lista, Disciplina, Aluno):
-        lista.append(Disciplina)
-        lista.append(Aluno)
+    def disciplinas_alunos(self, lista, disciplina, aluno):
+        lista.append(disciplina)
+        lista.append(aluno)
         return lista
     
-    def getSigla(self, Sigla):
-        self._sigla_curso = Sigla
+    def getSigla(self, sigla):
+        self._sigla_curso = sigla
         
     def matricular(self, Matricula, ListMatricula):
         ListMatricula.append(Matricula)
         return True
 
-    def confirmar_matricula(self, matricula, ListaMatricula, Disp, ListaDisp):
-        if Disp in ListaMatricula:
+    def confirmar_matricula(self, matricula, listaMatricula, disp, listaDisp):
+        if disp in listaMatricula:
             return False
         else:
-            ListaDisp.append(Disp)
-            if matricula in ListMatricula:
+            listaDisp.append(disp)
+            if matricula in listaMatricula:
                 Matricula.Data_canfirmacao(self)
                 return Matricula.Data_canfirmacao(self)
         
-    def cancelar_matricula(self, matricula, ListaMatricula):
-        if matricula in ListMatricula:
+    def cancelar_matricula(self, matricula, listaMatricula):
+        if matricula in listaMatricula:
             Matricula.Data_cancelamento(self)
             return Matricula.Data_cancelamento(self)
 

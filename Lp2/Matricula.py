@@ -21,7 +21,8 @@ class Matricula(object):
     def data_canfirmacao(self):
         self._data_confirmacao = datetime.datetime.now()
         return self._data_confirmacao
-    def Data_cancelamento(self):
+
+    def data_cancelamento(self):
         self._data_cancelamento = datetime.datetime.now()
         return self._data_cancelamento
     
