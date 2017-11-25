@@ -1,5 +1,6 @@
 class Disciplina(object):
-    def __init(self):
+    
+    def __init__(self):
         self._nome = None
         self._carga = None
         self._teoria = None
@@ -13,49 +14,44 @@ class Disciplina(object):
     def getNome(self):
         return self._nome
     
-    
+    def altera_Nome(self, Nome):
+        self._nome = Nome
         
-    def Altera_Nome(self,Nome):
-        self._nome=Nome
     def getCarga(self):
         return self._carga
-    def Altera_Carga(self,Carga):
+    
+    def Altera_Carga(self, Carga):
         try:
             if Carga <= 0 :
                 return False
             else:
-                self._carga=Carga
+                self._carga = Carga
                 return True
         except Exception as e:
             return print(e)
+        
     def getTeoria(self):
          return self._teoria
-    
-    
-       
-
-    def Altera_Teoria(self,Teoria):
+ 
+    def altera_Teoria(self, Teoria):
         try:
             if Teoria <= 0 :
                 return False
             else:
-                self._teoria=Teoria
+                self._teoria = Teoria
                 return True
         except Exception as e:
             return print(e)
        
-
     def getPratica(self):
         return self._pratica
-    
-    
 
-    def Altera_Pratica(self,Pratica):
+    def altera_Pratica(self, Pratica):
         try:
             if Pratica <= 0 :
                 return False
             else:
-                self._pratica=Pratica
+                self._pratica = Pratica
                 return True
         except Exception as e:
             return print(e)
@@ -63,57 +59,56 @@ class Disciplina(object):
     def getEmenta(self):
         return self._ementa
     
-    def setEmenta(self,Ementa):
-        self._ementa=Ementa
+    def setEmenta(self, Ementa):
+        self._ementa = Ementa
 
-    def Altera_Ementa(self,NovoEmenta):
-        self._ementa=NovoEmenta
+    def altera_Ementa(self, NovoEmenta):
+        self._ementa = NovoEmenta
         
     def getCompetencias(self):
         return self._competencias
     
-    def setCompetencias(self,Competencias):
-        self._competencias=Competencias
+    def setCompetencias(self, Competencias):
+        self._competencias = Competencias
 
-    def Altera_Competencias(self,NovoCompetencias):
-        self._competencias=NovoCompetencias
+    def altera_Competencias(self, NovoCompetencias):
+        self._competencias = NovoCompetencias
         
     def getHabilidades(self):
         return self._habilidades
     
     def setHabilidades(self,Habilidades):
-        self._habilidades=Habilidades
+        self._habilidades = Habilidades
 
-    def Altera_Habilidades(self,NovoHabilidades):
-        self._habilidades=NovoHabilidades
+    def altera_Habilidades(self, NovoHabilidades):
+        self._habilidades = NovoHabilidades
         
     def getConteudo(self):
         return self._conteudo
     
-    def setConteudo(self,Conteudo):
+    def setConteudo(self, Conteudo):
         self._conteudo=Conteudo
 
-    def Altera_Conteudo(self,NovoConteudo):
-        self._conteudo=NovoConteudo
+    def altera_Conteudo(self, NovoConteudo):
+        self._conteudo = NovoConteudo
 
-        
     def getBibliografia_basica(self):
         return self._bibliografia_basica
     
-    def setBibliografia_basica(self,Bibliografia_basica):
-        self._bibliografia_basica=Bibliografia_basica
+    def setBibliografia_basica(self, Bibliografia_basica):
+        self._bibliografia_basica = Bibliografia_basica
 
-    def Altera_Bibliografia_basica(self,NovoBibliografia_basica):
-        self._bibliografia_basica=NovoBibliografia_basica
+    def altera_Bibliografia_basica(self, NovoBibliografia_basica):
+        self._bibliografia_basica = NovoBibliografia_basica
         
     def getBibliografia_complementar(self):
         return self._bibliografia_complementar
     
-    def setBibliografia_complementar(self,Bibliografia_complementar):
-        self._bibliografia_complementar=Bibliografia_complementar
+    def setBibliografia_complementar(self, Bibliografia_complementar):
+        self._bibliografia_complementar = Bibliografia_complementar
 
-    def Altera_Bibliografia_complementar(self,NovoBibliografia_complementar):
-        self._bibliografia_complementar=Bibliografia_complementar
+    def altera_Bibliografia_complementar(self, NovoBibliografia_complementar):
+        self._bibliografia_complementar = Bibliografia_complementar
     
         
 
